@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookpage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=josefin+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="containerBotao">
+            <label for="menu" class="containerRotulo">
+                <span class="menu"></span>
+            </label>
+            <ul class="listaMenu">
+                <li class="listaMenuTitulo">Categoria</li>
+                <li class="listaMenuItem">
+                    <a href="#" class="listaMenuLink">Programação</a>
+                </li>
+                <li class="listaMenuItem">
+                    <a href="#" class="listaMenuLink">Front-end</a>
+                </li>
+                <li class="listaMenuItem">
+                    <a href="#" class="listaMenuLink">Infraestrutura</a>
+                </li>
+                <li class="listaMenuItem">
+                    <a href="#" class="listaMenuLink">Business</a>
+                </li>
+                <li class="listaMenuItem">
+                    <a href="#" class="listaMenuLink">Designe & UX</a>
+                </li>
+            </ul>
+            <img src="./assets/Logo.svg" alt="Logo da bookpage" class="containerImg">
+            <h1 class="containerTitulo"><b class="containerTituloNegrito">Book</b>page</h1>
+        </div>
+        <ul class="opcoes">
+            <li class="opcoesItem">
+                <input type="checkbox" id="opcoesMenu" class="opcoesBotao">
+                <label for="opcoesMenu" class="opcoesRotulo">Categorias
+                </label>
+                <ul class="listaMenu">
+                    <li class="listaMenuItem">
+                        <a href="#" class="listaMenuLink">Programação</a>
+                    </li>
+                    <li class="listaMenuItem">
+                        <a href="#" class="listaMenuLink">Front-end</a>
+                    </li>
+                    <li class="listaMenuItem">
+                        <a href="#" class="listaMenuLink">Infraestrutura</a>
+                    </li>
+                    <li class="listaMenuItem">
+                        <a href="#" class="listaMenuLink">Business</a>
+                    </li>
+                    <li class="listaMenuItem">
+                        <a href="#" class="listaMenuLink">Designe & UX</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="opcoesItem"><a href="#" class="opcoesLinks">Favoritos</a></li>
+            <li class="opcoesItem"><a href="#" class="opcoesLinks">Minha Estante</a></li>
+        </ul>
+        <div class="container">
+            <a href="#" class="containerLink">
+                <img src="./assets/Favoritos.svg" alt="Meus favoritos" class="containerImg containerImgTransparente">
+                
+            </a>
+            <a href="#" class="containerLink">
+                <img src="./assets/Compras.svg" alt="Carrinho de compras"class="containerImg">
+                <p class="containerTexto">Minha Sacola</p>
+            </a>
+            <a href="#" class="containerLink">
+                <img src="./assets/Usuario.svg" alt="Meu perfil" class="containerImg">
+                <p class="containerTexto">Meu Perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="bannerTitulo">Já sabe por onde começar?</h2>
+        <p class="bannerTexto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="bannerPesquisa" placeholder="Qual sera sua proxima leitura?">
+    </section>
+    <section class="carrosel">
+        <h2 class="carroselTitulo">Novos Lançamentos</h2>
+        <div class="carroselContainer">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot"></div>
+                    <div class="swiper-slide"><img src="./assets/Javascript.svg" alt="Livro sobre javascript"></div>
+                    <div class="swiper-slide"><img src="./assets/Guia Front-end.svg" alt="Livro guia front end"></div>
+                    <div class="swiper-slide"><img src="./assets/Portugol.svg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="cardDescricao">
+                    <div class="descricao">
+                        <h3 class="descricaoTitulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricaoTituloLivro">Angular 11 e Firebase</h2>
+                        <p class="descricaoTexto">Construindo uma aplicação integrada com a plataforma do Google</p>
+                    </div>
+                    <img src="./assets/Angular.svg" class="descricaoImagem">
+                </div>
+                <div class="cardBotoes">
+                    <ul class="botoes">
+                        <li class="botoesItem"><img src="./assets/Favoritos.svg" alt="Favoritar Livro"></li>
+                        <li class="botoesItem"><Img src="./assets/Compras.svg" alt="Adicionar no Carrinho"></li>
+                    </ul>
+                <a href="#" class="botoesAncora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrosel">
+        <h2 class="carroselTitulo">Mais Vendidos</h2>
+        <div class="carroselContainer">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot"></div>
+                    <div class="swiper-slide"><img src="./assets/Guia Front-end.svg" alt="Livro guia front end"></div>
+                    <div class="swiper-slide"><img src="./assets/Javascript.svg" alt="Livro sobre javascript"></div>
+                    <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="cardDescricao">
+                    <div class="descricao">
+                        <img src="./assets/Estrelinhas.svg">
+                        <h3 class="descricaoTitulo">Autora do Mês</h3>
+                        <h2 class="descricaoTituloLivro">Juliana Agarikov</h2>
+                        <p class="descricaoTexto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img src="./assets/Escritora.svg"  alt="Imagem da Escritora" class="descricaoImagem">
+                </div>
+                <div class="cardBotoes">
+                    <ul class="botoes">
+                        <li class="botoesItem"><img src="./assets/Favoritos.svg" alt="Favoritar Livro"></li>
+                        <li class="botoesItem"><Img src="./assets/Compras.svg" alt="Adicionar no Carrinho"></li>
+                    </ul>
+                    <a href="#" class="botoesAncora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicosTitulo">Tópicos Visitados recentemente</h2>
+        <ul class="topicosLista">
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Android</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Marketing Digital</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Agile</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Startup</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">HTML e CSS</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Python</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Orientação a objeto</a>
+            </li>
+            <li class="topicosItem">
+                <a  href="#" class="topicosLinks">Java</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contatoDescricao">
+            <h2 class="contatoTitulo">Fique por dentro das novidades</h2>
+            <p class="contatoTexto">Atualização de e-books, novos livros, promoções e outros</p>
+        </div>
+        <input type="text" placeholder="Cadastre Seu E-mail" class="contatoEmail">
+        
+    </section>
+
+    <hr>
+
+    <footer class="rodape">
+        <h2 class="rodapeTitulo">Bookpage</h2>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper",{
+            spaceBetween:10,
+            slidesPerView:3,
+            pagination:{
+                el: ".swiper-pagination",
+                type:"bullets",
+            }
+        });
+    </script>
+</body>
+</html>
